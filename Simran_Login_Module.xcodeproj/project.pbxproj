@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0549C64D260E30C3002C1E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C64C260E30C3002C1E66 /* AppDelegate.swift */; };
 		0549C64F260E30C4002C1E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C64E260E30C4002C1E66 /* SceneDelegate.swift */; };
-		0549C651260E30C4002C1E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C650260E30C4002C1E66 /* ViewController.swift */; };
 		0549C654260E30C4002C1E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C652260E30C4002C1E66 /* Main.storyboard */; };
 		0549C656260E30C6002C1E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0549C655260E30C6002C1E66 /* Assets.xcassets */; };
 		0549C659260E30C6002C1E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0549C657260E30C6002C1E66 /* LaunchScreen.storyboard */; };
 		0549C664260E30C6002C1E66 /* Simran_Login_ModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C663260E30C6002C1E66 /* Simran_Login_ModuleTests.swift */; };
 		0549C66F260E30C6002C1E66 /* Simran_Login_ModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C66E260E30C6002C1E66 /* Simran_Login_ModuleUITests.swift */; };
+		0549C688260E387C002C1E66 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C680260E387C002C1E66 /* AuthManager.swift */; };
+		0549C689260E387C002C1E66 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C682260E387C002C1E66 /* LoginViewModel.swift */; };
+		0549C68D260E387C002C1E66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C687260E387C002C1E66 /* LoginViewController.swift */; };
+		0549C6CA260E5FA5002C1E66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0549C6C9260E5FA5002C1E66 /* User.swift */; };
+		33091E0121393ABEF94A8303 /* Pods_Simran_Login_Module_Simran_Login_ModuleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70383E3C5158424E88DF435E /* Pods_Simran_Login_Module_Simran_Login_ModuleUITests.framework */; };
+		772C2D6BC77F4708AE043EC3 /* Pods_Simran_Login_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35D4B067989C5412E76E001 /* Pods_Simran_Login_Module.framework */; };
+		F0E15F635A529A7288DFC816 /* Pods_Simran_Login_ModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8EEB562CAEB6760C7E1A4C /* Pods_Simran_Login_ModuleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E97BEA3A69BA8136429C97 /* Pods-Simran_Login_Module-Simran_Login_ModuleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simran_Login_Module-Simran_Login_ModuleUITests.release.xcconfig"; path = "Target Support Files/Pods-Simran_Login_Module-Simran_Login_ModuleUITests/Pods-Simran_Login_Module-Simran_Login_ModuleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0549C649260E30C3002C1E66 /* Simran_Login_Module.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simran_Login_Module.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0549C64C260E30C3002C1E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0549C64E260E30C4002C1E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0549C650260E30C4002C1E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0549C653260E30C4002C1E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0549C655260E30C6002C1E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0549C658260E30C6002C1E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,18 @@
 		0549C66A260E30C6002C1E66 /* Simran_Login_ModuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Simran_Login_ModuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0549C66E260E30C6002C1E66 /* Simran_Login_ModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simran_Login_ModuleUITests.swift; sourceTree = "<group>"; };
 		0549C670260E30C6002C1E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0549C680260E387C002C1E66 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0549C682260E387C002C1E66 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0549C687260E387C002C1E66 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0549C6C9260E5FA5002C1E66 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5AD2A2FB60224CBF302E89E6 /* Pods-Simran_Login_Module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simran_Login_Module.release.xcconfig"; path = "Target Support Files/Pods-Simran_Login_Module/Pods-Simran_Login_Module.release.xcconfig"; sourceTree = "<group>"; };
+		70383E3C5158424E88DF435E /* Pods_Simran_Login_Module_Simran_Login_ModuleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simran_Login_Module_Simran_Login_ModuleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9FE70E9679ACF4F3BDFAEB /* Pods-Simran_Login_Module-Simran_Login_ModuleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simran_Login_Module-Simran_Login_ModuleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Simran_Login_Module-Simran_Login_ModuleUITests/Pods-Simran_Login_Module-Simran_Login_ModuleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC497BB398B708FF7AFAC02 /* Pods-Simran_Login_ModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simran_Login_ModuleTests.release.xcconfig"; path = "Target Support Files/Pods-Simran_Login_ModuleTests/Pods-Simran_Login_ModuleTests.release.xcconfig"; sourceTree = "<group>"; };
+		916B1A70189D9ADE6307AB2D /* Pods-Simran_Login_ModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simran_Login_ModuleTests.debug.xcconfig"; path = "Target Support Files/Pods-Simran_Login_ModuleTests/Pods-Simran_Login_ModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DB6958DDC84544E76CFF844 /* Pods-Simran_Login_Module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simran_Login_Module.debug.xcconfig"; path = "Target Support Files/Pods-Simran_Login_Module/Pods-Simran_Login_Module.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8EEB562CAEB6760C7E1A4C /* Pods_Simran_Login_ModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simran_Login_ModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35D4B067989C5412E76E001 /* Pods_Simran_Login_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simran_Login_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772C2D6BC77F4708AE043EC3 /* Pods_Simran_Login_Module.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E15F635A529A7288DFC816 /* Pods_Simran_Login_ModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33091E0121393ABEF94A8303 /* Pods_Simran_Login_Module_Simran_Login_ModuleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,8 @@
 				0549C662260E30C6002C1E66 /* Simran_Login_ModuleTests */,
 				0549C66D260E30C6002C1E66 /* Simran_Login_ModuleUITests */,
 				0549C64A260E30C3002C1E66 /* Products */,
+				A8763D5F30B5B4BA31B456DD /* Pods */,
+				AEEC29DE74105A7F9F085EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +124,10 @@
 			children = (
 				0549C64C260E30C3002C1E66 /* AppDelegate.swift */,
 				0549C64E260E30C4002C1E66 /* SceneDelegate.swift */,
-				0549C650260E30C4002C1E66 /* ViewController.swift */,
+				0549C6B6260E596A002C1E66 /* Model */,
+				0549C67F260E387C002C1E66 /* Managers */,
+				0549C684260E387C002C1E66 /* ViewControllers */,
+				0549C681260E387C002C1E66 /* ViewModels */,
 				0549C652260E30C4002C1E66 /* Main.storyboard */,
 				0549C655260E30C6002C1E66 /* Assets.xcassets */,
 				0549C657260E30C6002C1E66 /* LaunchScreen.storyboard */,
@@ -128,6 +154,61 @@
 			path = Simran_Login_ModuleUITests;
 			sourceTree = "<group>";
 		};
+		0549C67F260E387C002C1E66 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0549C680260E387C002C1E66 /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0549C681260E387C002C1E66 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0549C682260E387C002C1E66 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0549C684260E387C002C1E66 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0549C687260E387C002C1E66 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0549C6B6260E596A002C1E66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0549C6C9260E5FA5002C1E66 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8763D5F30B5B4BA31B456DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6958DDC84544E76CFF844 /* Pods-Simran_Login_Module.debug.xcconfig */,
+				5AD2A2FB60224CBF302E89E6 /* Pods-Simran_Login_Module.release.xcconfig */,
+				7D9FE70E9679ACF4F3BDFAEB /* Pods-Simran_Login_Module-Simran_Login_ModuleUITests.debug.xcconfig */,
+				03E97BEA3A69BA8136429C97 /* Pods-Simran_Login_Module-Simran_Login_ModuleUITests.release.xcconfig */,
+				916B1A70189D9ADE6307AB2D /* Pods-Simran_Login_ModuleTests.debug.xcconfig */,
+				8EC497BB398B708FF7AFAC02 /* Pods-Simran_Login_ModuleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AEEC29DE74105A7F9F085EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A35D4B067989C5412E76E001 /* Pods_Simran_Login_Module.framework */,
+				70383E3C5158424E88DF435E /* Pods_Simran_Login_Module_Simran_Login_ModuleUITests.framework */,
+				9F8EEB562CAEB6760C7E1A4C /* Pods_Simran_Login_ModuleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0549C673260E30C6002C1E66 /* Build configuration list for PBXNativeTarget "Simran_Login_Module" */;
 			buildPhases = (
+				82591CF5007D8F4C2E1FC821 /* [CP] Check Pods Manifest.lock */,
 				0549C645260E30C3002C1E66 /* Sources */,
 				0549C646260E30C3002C1E66 /* Frameworks */,
 				0549C647260E30C3002C1E66 /* Resources */,
+				94E2D009B9FDBC0EE28FEE82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0549C676260E30C6002C1E66 /* Build configuration list for PBXNativeTarget "Simran_Login_ModuleTests" */;
 			buildPhases = (
+				9F1D41A4BA3488DE34DA0D89 /* [CP] Check Pods Manifest.lock */,
 				0549C65B260E30C6002C1E66 /* Sources */,
 				0549C65C260E30C6002C1E66 /* Frameworks */,
 				0549C65D260E30C6002C1E66 /* Resources */,
@@ -170,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0549C679260E30C6002C1E66 /* Build configuration list for PBXNativeTarget "Simran_Login_ModuleUITests" */;
 			buildPhases = (
+				141FF203100A06C50D6ECB95 /* [CP] Check Pods Manifest.lock */,
 				0549C666260E30C6002C1E66 /* Sources */,
 				0549C667260E30C6002C1E66 /* Frameworks */,
 				0549C668260E30C6002C1E66 /* Resources */,
+				0EE803CDBA9DB62044936A67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,13 +339,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE803CDBA9DB62044936A67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simran_Login_Module-Simran_Login_ModuleUITests/Pods-Simran_Login_Module-Simran_Login_ModuleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simran_Login_Module-Simran_Login_ModuleUITests/Pods-Simran_Login_Module-Simran_Login_ModuleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simran_Login_Module-Simran_Login_ModuleUITests/Pods-Simran_Login_Module-Simran_Login_ModuleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		141FF203100A06C50D6ECB95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simran_Login_Module-Simran_Login_ModuleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82591CF5007D8F4C2E1FC821 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simran_Login_Module-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E2D009B9FDBC0EE28FEE82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simran_Login_Module/Pods-Simran_Login_Module-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simran_Login_Module/Pods-Simran_Login_Module-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simran_Login_Module/Pods-Simran_Login_Module-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1D41A4BA3488DE34DA0D89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simran_Login_ModuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0549C645260E30C3002C1E66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0549C651260E30C4002C1E66 /* ViewController.swift in Sources */,
+				0549C689260E387C002C1E66 /* LoginViewModel.swift in Sources */,
 				0549C64D260E30C3002C1E66 /* AppDelegate.swift in Sources */,
+				0549C68D260E387C002C1E66 /* LoginViewController.swift in Sources */,
+				0549C6CA260E5FA5002C1E66 /* User.swift in Sources */,
+				0549C688260E387C002C1E66 /* AuthManager.swift in Sources */,
 				0549C64F260E30C4002C1E66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +625,7 @@
 		};
 		0549C674260E30C6002C1E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB6958DDC84544E76CFF844 /* Pods-Simran_Login_Module.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +645,7 @@
 		};
 		0549C675260E30C6002C1E66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD2A2FB60224CBF302E89E6 /* Pods-Simran_Login_Module.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +665,7 @@
 		};
 		0549C677260E30C6002C1E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916B1A70189D9ADE6307AB2D /* Pods-Simran_Login_ModuleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +688,7 @@
 		};
 		0549C678260E30C6002C1E66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC497BB398B708FF7AFAC02 /* Pods-Simran_Login_ModuleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +711,7 @@
 		};
 		0549C67A260E30C6002C1E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9FE70E9679ACF4F3BDFAEB /* Pods-Simran_Login_Module-Simran_Login_ModuleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +732,7 @@
 		};
 		0549C67B260E30C6002C1E66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E97BEA3A69BA8136429C97 /* Pods-Simran_Login_Module-Simran_Login_ModuleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
